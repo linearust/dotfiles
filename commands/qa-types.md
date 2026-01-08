@@ -1,3 +1,5 @@
+Ultrathink.
+
 Verify type safety.
 
 ## Goal

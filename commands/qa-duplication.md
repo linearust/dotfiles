@@ -1,3 +1,5 @@
+Ultrathink.
+
 Verify no code duplication.
 
 ## Goal

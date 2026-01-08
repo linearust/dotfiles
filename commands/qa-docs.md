@@ -1,3 +1,5 @@
+Ultrathink.
+
 Verify documentation accuracy.
 
 ## Goal

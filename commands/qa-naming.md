@@ -1,3 +1,5 @@
+Ultrathink.
+
 Verify names reveal intent.
 
 ## Goal

@@ -1,3 +1,5 @@
+Ultrathink.
+
 Verify minimal coupling.
 
 ## Goal

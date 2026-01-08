@@ -1,3 +1,5 @@
+Ultrathink.
+
 Verify logic correctness.
 
 ## Goal

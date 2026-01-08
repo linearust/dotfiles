@@ -4,6 +4,12 @@
 
 ---
 
+## Thinking
+
+Always use `ultrathink` for extended thinking on every task.
+
+---
+
 ## Stack
 
 | Layer | Technology |
@@ -58,10 +64,6 @@ Other types may be added as needed.
 - Path parameters: `/todos/{todo_id}`
 - Handler names: `method_[type_]resource_[param]`
 - Handler modules by route type
-
-### Client-Side Behavior
-
-Use Hyperscript for interactive behavior. Prefer declarative `_` attributes over JavaScript.
 
 ---
 

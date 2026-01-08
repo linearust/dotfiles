@@ -1,3 +1,5 @@
+Ultrathink.
+
 Verify error handling.
 
 ## Goal
