@@ -31,6 +31,7 @@ Always use `ultrathink` for extended thinking on every task.
 | Breaking changes encouraged | No backward compatibility concerns |
 | Single standard | One way per use case |
 | Single source of truth | Define once, reference everywhere |
+| Latest versions | Prefer newest stable releases and modern patterns |
 
 ---
 

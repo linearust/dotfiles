@@ -17,7 +17,7 @@ qa task:
     @echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
 
 # Run all QA tasks in order
-all: (qa "structure") (qa "naming") (qa "logic") (qa "errors") (qa "duplication") (qa "coupling") (qa "complexity") (qa "types") (qa "consistency") (qa "docs")
+all: (qa "structure") (qa "naming") (qa "logic") (qa "errors") (qa "duplication") (qa "coupling") (qa "complexity") (qa "types") (qa "consistency") (qa "docs") (qa "versions")
     @echo ""
     @echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
     @echo "┃  ✓ All QA tasks complete"
