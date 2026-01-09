@@ -71,7 +71,9 @@ Other types may be added as needed.
 
 ## UI
 
-Minimal and functional — no decoration.
+- Minimal and functional — no decoration
+- No tooltips — show information directly in the UI
+- Responsive — mobile and PC, landscape orientation only
 
 ---
 
