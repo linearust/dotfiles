@@ -1,24 +1,25 @@
 # Claude Code QA automation
 
-# Default: run all QA tasks
+set positional-arguments
+
 default: all
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Commands
+# ─────────────────────────────────────────────────────────────────────────────
 
 # Run a specific QA task
 qa task:
     @echo ""
-    @echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
-    @echo "┃  QA: {{task}}"
-    @echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    @echo "━━━ QA: {{task}} ━━━"
     @echo ""
-    claude -p "/qa-{{task}}" --dangerously-skip-permissions
+    @claude -p "$(cat commands/qa-{{task}}.md)" --dangerously-skip-permissions
     @echo ""
-    @echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
-    @echo "┃  ✓ {{task}} complete"
-    @echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
 
-# Run all QA tasks in order
+# Run all QA tasks
 all: (qa "structure") (qa "naming") (qa "logic") (qa "errors") (qa "duplication") (qa "coupling") (qa "complexity") (qa "types") (qa "consistency") (qa "docs") (qa "versions")
-    @echo ""
-    @echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
-    @echo "┃  ✓ All QA tasks complete"
-    @echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    @echo "━━━ All QA tasks complete ━━━"
+
+# List available QA tasks
+list:
+    @ls -1 commands/qa-*.md | sed 's|commands/qa-||;s|\.md||'
